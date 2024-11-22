@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db.changelog/script/create-table-taskuser.sql
+  - include:
+      file: db.changelog/script/create-table-task.sql
+  - include:
+      file: db.changelog/script/create-table-comments.sql

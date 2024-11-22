@@ -1,0 +1,27 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: task-management
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/task-management
+    username: admin
+    password: 111
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+    show-sql: true
+
+  liquibase:
+    change-log: db.changelog/db.changelog-master.yaml
+
+token:
+  spring:
+    key: 53A73E5F1C4E0A2D3B5F2D784E6A1B423D6F247D1F6E5C3A596D635A75327855
+
+
+

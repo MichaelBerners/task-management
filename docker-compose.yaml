@@ -1,0 +1,16 @@
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:14
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres-net
+    environment:
+      - POSTGRES_DB=task-management
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=111
+
+networks:
+  postgres-net:
+    driver: bridge
